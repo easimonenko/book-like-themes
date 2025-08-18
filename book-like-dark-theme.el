@@ -163,5 +163,11 @@
  '(trailing-whitespace ((t (:inverse-video t))))
  '(warning ((t (:foreground "white smoke" :weight bold)))))
 
+;;;###autoload
+(and load-file-name
+     (boundp 'custom-theme-load-path)
+     (add-to-list 'custom-theme-load-path
+                  (file-name-as-directory (file-name-directory load-file-name))))
+
 (provide-theme 'book-like-dark)
 ;;; book-like-dark-theme.el ends here
