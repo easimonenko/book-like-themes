@@ -11,6 +11,8 @@ Book like grayscale light and dark themes for GNU Emacs. They provide grayscale 
 #+CAPTION: Book Like Dark Theme Screenshot
 [[./images/book-like-dark-theme-screenshot.png]]
 
+Use interactive functions =book-like-themes-toggle= for theme toggling, =book-like-light-load= for light variant loading, and = book-like-dark-load= for dark variant loading.
+
 * License
 
 Copyright (C) 2025 Evgeny Simonenko

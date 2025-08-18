@@ -31,5 +31,39 @@
 
 ;;; Code:
 
+;;;###autoload
+(defun book-like-light-load ()
+  "Load `book-like-light' and disable `book-like-dark'."
+  (interactive)
+  (disable-theme 'book-like-dark)
+  (load-theme 'book-like-light))
+
+;;;###autoload
+(defun book-like-dark-load ()
+  "Load `book-like-dark' and disable `book-like-light'."
+  (interactive)
+  (disable-theme 'book-like-light)
+  (load-theme 'book-like-dark))
+
+;;;###autoload
+(defun book-like-themes--toggle-prompt ()
+  "Helper for `book-like-themes-toggle'."
+  (let ((theme (intern (completing-read "Load Book Like theme: "
+                                        '(book-like-light book-like-dark)
+                                        nil t))))
+    (mapc #'disable-theme custom-enabled-themes)
+    (pcase theme
+      ('book-like-light (book-like-light-load))
+      ('book-like-dark (book-like-dark-load)))))
+
+;;;###autoload
+(defun book-like-themes-toggle ()
+  "Toggle between the light and dark versions of `book-like-themes'."
+  (interactive)
+  (pcase (car custom-enabled-themes)
+    ('book-like-light (book-like-dark-load))
+    ('book-like-dark (book-like-light-load))
+    (_ (book-like-themes--toggle-prompt))))
+
 (provide 'book-like-themes)
 ;;; book-like-themes.el ends here
