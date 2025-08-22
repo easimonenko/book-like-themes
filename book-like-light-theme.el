@@ -4,7 +4,7 @@
 
 ;; Author: Evgeny Simonenko <easimonenko@gmail.com>
 ;; Keywords: themes
-;; Version: 0.1.0
+;; Version: 0.1.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Created: August 2025
 ;; URL: https://github.com/easimonenko/book-like-themes
@@ -123,6 +123,8 @@
  '(magit-signature-untrusted ((t (:background "white smoke" :foreground "dim gray"))))
  '(magit-tag ((t (:foreground "dim gray"))))
 
+ '(markdown-highlighting-face ((t (:background "white smoke" :foreground "black"))))
+ 
  '(match ((t (:inverse-video t))))
  '(minibuffer-prompt ((t (:foreground "dim gray" :weight bold))))
  '(mode-line ((t (:background "light gray" :foreground "black" :box (:line-width (1 . -1) :style released-button)))))
@@ -154,11 +156,13 @@
  '(outline-2 ((t (:inherit font-lock-variable-name-face :weight bold))))
  '(outline-3 ((t (:inherit font-lock-keyword-face :weight bold))))
 
+ '(sh-heredoc ((t (:foreground "gray"))))
+ '(sh-quoted-exec ((t (:foreground "dim gray"))))
+ 
  '(region ((t (:extend t :inverse-video t))))
  '(shadow ((t (:background "white smoke" :foreground "dim gray"))))
  '(show-paren-match ((t (:inverse-video t))))
  '(show-paren-mismatch ((t (:inverse-video t))))
-
  '(success ((t (:foreground "gray" :weight bold))))
  '(trailing-whitespace ((t (:inverse-video t))))
  '(warning ((t (:foreground "dim gray" :weight bold)))))
