@@ -48,7 +48,7 @@
  '(completions-annotations ((t (:inherit shadow))))
  '(completions-common-part ((t (:weight bold))))
 
- '(cursor ((((background light)) (:background "black")) (((background dark)) (:background "white"))))
+ '(cursor ((((background light)) (:background "white smoke")) (((background dark)) (:background "dim gray"))))
 
  '(custom-group-tag ((t (:inherit variable-pitch :weight bold))))
  '(custom-invalid ((t (:inherit error :background "dim gray" :underline (:color foreground-color :style wave :position nil)))))
@@ -62,7 +62,7 @@
  '(flymake-error ((t (:underline (:color "white" :style wave :position nil)))))
  '(flymake-note ((t (:underline (:color "dark gray" :style wave :position nil)))))
  '(flymake-warning ((t (:underline (:color "gainsboro" :style wave :position nil)))))
- 
+
  '(font-lock-bracket-face ((t (:foreground "gainsboro"))))
  '(font-lock-builtin-face ((t (:foreground "gainsboro" :weight bold))))
  '(font-lock-comment-face ((t (:extend t :background "dim gray" :foreground "white smoke"))))

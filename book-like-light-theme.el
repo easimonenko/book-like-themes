@@ -48,7 +48,7 @@
  '(completions-annotations ((t (:inherit shadow))))
  '(completions-common-part ((t (:weight bold))))
 
- '(cursor ((((background light)) (:background "black")) (((background dark)) (:background "white"))))
+ '(cursor ((((background light)) (:background "dim gray")) (((background dark)) (:background "white smoke"))))
 
  '(custom-group-tag ((t (:inherit variable-pitch :foreground "black" :weight bold))))
  '(custom-invalid ((t (:inherit error :background "white smoke" :underline (:color foreground-color :style wave :position nil)))))
@@ -124,7 +124,7 @@
  '(magit-tag ((t (:foreground "dim gray"))))
 
  '(markdown-highlighting-face ((t (:background "white smoke" :foreground "black"))))
- 
+
  '(match ((t (:inverse-video t))))
  '(minibuffer-prompt ((t (:foreground "dim gray" :weight bold))))
  '(mode-line ((t (:background "light gray" :foreground "black" :box (:line-width (1 . -1) :style released-button)))))
@@ -158,7 +158,7 @@
 
  '(sh-heredoc ((t (:foreground "gray"))))
  '(sh-quoted-exec ((t (:foreground "dim gray"))))
- 
+
  '(region ((t (:extend t :inverse-video t))))
  '(shadow ((t (:background "white smoke" :foreground "dim gray"))))
  '(show-paren-match ((t (:inverse-video t))))
