@@ -4,7 +4,7 @@
 
 ;; Author: Evgeny Simonenko <easimonenko@gmail.com>
 ;; Keywords: themes
-;; Version: 0.1.1
+;; Version: 0.1.2
 ;; Package-Requires: ((emacs "26.1"))
 ;; Created: August 2025
 ;; URL: https://github.com/easimonenko/book-like-themes
@@ -37,6 +37,15 @@
 (custom-theme-set-faces
  'book-like-dark
  '(default ((t (:width normal :weight regular :slant normal :underline nil :overline nil :extend nil :strike-through nil :box nil :inverse-video nil :foreground "white" :background "black" :stipple nil :inherit nil))))
+
+ '(agda2-highlight-datatype-face ((t (:inherit font-lock-type-face))))
+ '(agda2-highlight-error-face ((t (:underline t))))
+ '(agda2-highlight-function-face ((t (:inherit font-lock-function-name-face))))
+ '(agda2-highlight-inductive-constructor-face ((t (:inherit font-lock-function-name-face :slant oblique))))
+ '(agda2-highlight-keyword-face ((t (:inherit font-lock-keyword-face))))
+ '(agda2-highlight-module-face ((t (:foreground "white smoke" :weight bold))))
+ '(agda2-highlight-number-face ((t (:inherit font-lock-number-face))))
+ '(agda2-highlight-primitive-type-face ((t (:inherit font-lock-type-face :weight normal))))
 
  '(company-tooltip ((t (:background  "dim gray" :foreground "white"))))
  '(company-tooltip-annotation ((t (:foreground "gainsboro"))))
